@@ -1,0 +1,28 @@
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class LCMnum
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{	int a,b;
+		System.out.println("Enter two num");
+		Scanner s=new Scanner(System.in);
+		a=s.nextInt();
+		b=s.nextInt();
+	
+		int lcm=(a>b)?a:b;
+		while(true)
+		{
+			if(lcm % a == 0 && lcm % b ==0)
+			{
+				System.out.printf("The LCM of %d and %d is %d.", a, b, lcm);
+                break;
+			}
+			++lcm;
+		}
+	}
+}
