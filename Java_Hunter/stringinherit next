@@ -1,0 +1,30 @@
+//parent class
+public class stringinherit {
+    static double number_send=10;
+    {
+        String number_send="Not initialised";
+        System.out.println("In instance initialiser:"+number_send);
+    }
+    public void printpar(){
+        System.out.println("In parent class method");
+        System.out.println("Printing the value of number:"+number_send);
+    }
+    public static void main(String args[]){
+        new stringinherit();
+        System.out.println("In parent class and the value in double is :"+number_send);
+    }
+}
+
+
+//derived class
+public class numberstring extends stringinherit{
+    
+  
+    public static void main(String args[]){
+        numberstring n=new numberstring();
+        System.out.println("In sub class");
+    
+        n.printpar();
+    }
+}
+  
