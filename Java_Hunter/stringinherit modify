@@ -1,0 +1,12 @@
+public class stringinherit {
+    static double number_send=10;
+    {
+        String number_send="Not initialised";
+        System.out.println("In instance initialiser:"+number_send);
+    }
+    
+    public static void main(String args[]){
+        new stringinherit();
+        System.out.println("In parent class and the value in double is :"+number_send);
+    }
+}
